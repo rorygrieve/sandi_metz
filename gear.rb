@@ -1,10 +1,12 @@
 class Gear
 
-  attr_reader :chainrig, :cog
+  attr_reader :chainrig, :cog, :rim, :tire
 
-  def initialize(chaingrig, cog)
+  def initialize(chaingrig, cog, rim, tire)
     @chainrig = chaingrig
     @cog      = cog
+    @rim      = rim
+    @tire     = tire
   end
 
   def ratio
